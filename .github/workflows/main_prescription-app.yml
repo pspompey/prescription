@@ -25,6 +25,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '18.x'
+  
+      - task: Npm@1
+        displayName: 'npm install with legacy-peer-deps'
+        inputs:
+          workingDir: '$(System.DefaultWorkingDirectory)/src/Web/work996'
+          command: 'custom'
+          customCommand: 'install --legacy-peer-deps'
 
       - name: npm install, build, and test
         run: |
