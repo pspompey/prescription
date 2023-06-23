@@ -28,11 +28,14 @@ jobs:
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/prescription-app" # App source code path
-          app_build_command: "npm install --legacy-peer-deps"
           api_location: "" # Api source code path - optional
           output_location: "dist/prescription-app" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-
+      - script: |
+        npm install --legacy-peer-deps
+        npm run build
+        
+  displayName: 'npm install and build'
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
