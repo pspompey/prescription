@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand" style="color: white;">Recetario</a>
+</nav>
+<br>
+
+<div class="container card border">
+<h1 class="text-center">Formulario Paciente</h1>
+	<div class="card-body">
+		<div class="container card border">
+			<div class="form-row">
+				<div class="form-group col-md-2">
+					<label>Tipo Doc:</label>
+					<select class="form-control">
+						<option>DNI</option>
+						<option>LC</option>
+						<option>CI</option>
+					</select>
+				</div>
+				<div class="form-group col-md-5">
+					<label>N° Doc:</label>
+					<input type="text" class="form-control" placeholder="xx.xxx.xxx" >
+				</div>
+				<div class="form-group col-md-5">
+					<label>N° Trámite:</label>
+					<input type="text" class="form-control" placeholder="" >
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-2">
+					<label>Fecha Nacimiento:</label>
+					<input placeholder="Select date" type="date" id="example" class="form-control">
+				</div>
+				<div class="form-group col-md-5">
+					<label>Nombre:</label>
+					<input type="text" class="form-control" placeholder="" >
+				</div>
+				<div class="form-group col-md-5">
+					<label>Apellido:</label>
+					<input type="text" class="form-control" placeholder="" >
+				</div>
+			</div>			
+		</div>
+		<br/>
+		<div class="container card border">
+			<div class="form-row">
+				<div class="form-group col-md-2">
+					<label>Tipo Tel:</label>
+					<select class="form-control">
+						<option>Celular</option>
+						<option>Fijo</option>
+					</select>
+				</div>
+				<div class="form-group col-md-5">
+					<label>N° Tel:</label>
+					<input type="text" class="form-control" placeholder="54 9 11 1234 1234" >
+				</div>
+				<div class="form-group col-md-5">
+					<label>E-mail:</label>
+					<input type="text" class="form-control" placeholder="ejemplo@domain.com" >
+				</div>
+			</div>	
+		</div>
+		<br/>
+		<div class="container card border">
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label>Cobertura Médica:</label>
+					<input type="text" class="form-control" placeholder="" >
+				</div>
+				<div class="form-group col-md-4">
+					<label>Plan médico:</label>
+					<input type="text" class="form-control" placeholder="" >
+				</div>
+				<div class="form-group col-md-4">
+					<label>Nro° de socio:</label>
+					<input type="text" class="form-control" placeholder="" >
+				</div>
+			</div>	
+		</div>
+		<br/>
+		<div class="btn-group">
+			<button type="button" class="btn btn-success" style="margin-right: 5px">Guardar</button>
+		</div> 
+		<div class="btn-group">
+			<button type="button" class="btn btn-secondary" style="margin-right: 5px">Cancelar</button>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-danger" (click)="openModal()">Darse de baja</button>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand"  style="color: white;">Recetario</a>
+</nav>
+<br>
+
+<div class="container card border">
+<h1 class="text-center">Receta</h1>
+	<div class="card-body">
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<label>Diagnóstico:</label><textarea class="form-control" rows="2" ></textarea>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12">
+			<label>Indicaciones:</label><textarea class="form-control" rows="2"></textarea>
+		</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<label>Comentario:</label><textarea class="form-control" rows="2"></textarea>
+			</div>
+		</div>
+		<div class="form-row" *ngIf="isPrescription">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox">
+				<label class="form-check-label">Tratamiento prolongado</label>
+			</div>
+		</div>
+		<br/>
+		<div class="form-row">
+			<button class="btn btn-success">Generar Receta</button>
+		</div>
+	</div>
+</div>
